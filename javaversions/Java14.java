@@ -1,5 +1,7 @@
 package javaversions;
 
+import java.util.Collection;
+
 public class Java14 {
     public static String JAVA_VERSION = "1.4";
 
@@ -10,5 +12,10 @@ public class Java14 {
     public static void testRunnable(Runnable runnable) {
         System.out.println("testRunnable: " + JAVA_VERSION);
         runnable.run();
+    }
+
+    public static void testCollections(Collection collection) {
+        System.out.println("testCollections: " + JAVA_VERSION);
+        System.out.println("First Element: " + collection.iterator().next());
     }
 }
